@@ -32,7 +32,7 @@ const UserList = () => {
               <th>ID</th>
               <th>Name</th>
               <th>Email</th>
-              <th>Mobile</th>
+              <th>Mobile No</th>
             </tr>
           </thead>
           <tbody>
