@@ -32,9 +32,7 @@ const UserList = () => {
               <th>ID</th>
               <th>Name</th>
               <th>Email</th>
-              <th>Mobile</th>
-              <th>Created On</th>
-              <th>Updated On</th>
+              <th>Mobile No</th>
             </tr>
           </thead>
           <tbody>
@@ -44,8 +42,6 @@ const UserList = () => {
                 <td>{user.name}</td>
                 <td>{user.email}</td>
                 <td>{user.mobile}</td>
-                <td>{user.createdAt}</td>
-                <td>{user.updatedAt}</td>
               </tr>
             ))}
           </tbody>
