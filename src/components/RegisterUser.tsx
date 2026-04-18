@@ -33,7 +33,7 @@ const RegisterUser = () => {
   return (
     <Card>
       <Card.Body>
-        <h4>Register User</h4>
+        <h4>Register User Page</h4>
         <Form onSubmit={handleSubmit}>
           <Form.Group className="mb-3">
             <Form.Label>Name</Form.Label>
