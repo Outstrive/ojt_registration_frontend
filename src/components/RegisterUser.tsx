@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Form, Button, Card } from 'react-bootstrap';
 import axios from 'axios';
+import Accordion from 'react-bootstrap/Accordion';
 
 const RegisterUser = () => {
   const [formData, setFormData] = useState({
@@ -31,6 +32,7 @@ const RegisterUser = () => {
   };
 
   return (
+    <div>
     <Card>
       <Card.Body>
         <h4>Register User Page</h4>
@@ -68,12 +70,52 @@ const RegisterUser = () => {
             />
           </Form.Group>
 
-          <Button variant="primary" type="submit">
+          <Button variant="success" type="submit">
             Register
           </Button>
         </Form>
       </Card.Body>
+
+
+      <br/>
+
+      <hr/>
+
+
+       <Accordion defaultActiveKey="0">
+      <Accordion.Item eventKey="0">
+        <Accordion.Header>Heading 1</Accordion.Header>
+        <Accordion.Body>
+             Heading 1 content
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="1">
+        <Accordion.Header>Heading 2</Accordion.Header>
+        <Accordion.Body>
+           Heading 2 Content
+        </Accordion.Body>
+      </Accordion.Item>
+    </Accordion>
+
+
     </Card>
+
+
+
+     <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+        <Button variant="primary">Go somewhere</Button>
+      </Card.Body>
+    </Card>
+
+
+    </div>
   );
 };
 
